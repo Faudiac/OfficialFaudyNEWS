@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Faudy News</title>
+        <link rel="stylesheet" href="../Source/style.css">
+        <link rel="shortcut icon" type="x-icon" href="../Source/Images/FaudiaxWebICON.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div id="body">
+            <div id="title">
+                <h1>Faudy News</h1>
+                <div id="line1"></div>
+                    <p><a href="watchindex.html" class="nav-butn">Watch Feed</a></p>
+                    <p><a href="info.html" class="nav-butn">info</a></p>
+                    <p><a href="index.html" class="nav-butn">home</a></p>
+                <div id="line2"></div>
+            </div>
+
+            <form role="search" id="form" class="Search">
+                <input type="search" id="query" name="q" 
+                placeholder="Search..." 
+                aria-label="Search through site content">
+                <button class="search-press">
+        
+                  <svg viewBox="0 0 1024 1024"><path class="path1" 
+                    d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.
+                    059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 
+                    312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059
+                    177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091
+                    218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.15
+                    9-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
+                    </path></svg>
+        
+                </button>
+        
+            </form>
+        
+            <script>
+                const f = document.getElementById('form');
+                const q = document.getElementById('query');
+                const google = 'https://faudiac.github.io/faudibrowser/#gsc.tab=0/search?q=site%3A+';
+                const site = '';
+          
+                function submitted(event) {
+                  event.preventDefault();
+                  const url = google + site + '+' + q.value;
+                  const win = window.open(url, '_blank');
+                  win.focus();
+                }
+          
+                f.addEventListener('submit', submitted);
+              </script>
+
+            <a href="https://faudiac.github.io/faudibrowser/#gsc.tab=0">
+                <button class="faudibrowsericon">F</button>
+            </a>
+
+            <a class="rounded-youtube" href="https://www.youtube.com/channel/UC13KjiIUCVGeKkhdHQIUcCQ">
+                <ion-icon name="logo-youtube" size="large"></ion-icon>
+            </a> 
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+            </div>
+
+        </div>
+    </body>
+
+</html>

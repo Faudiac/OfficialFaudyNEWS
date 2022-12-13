@@ -20,52 +20,47 @@
                 <div id="line2"></div>
             </div>
 
-            <form role="search" id="form" class="Search">
-                <input type="search" id="query" name="q" 
-                placeholder="Search..." 
-                aria-label="Search through site content">
-                <button class="search-press">
-        
-                  <svg viewBox="0 0 1024 1024"><path class="path1" 
-                    d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.
-                    059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 
-                    312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059
-                    177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091
-                    218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.15
-                    9-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
-                    </path></svg>
-        
-                </button>
-        
-            </form>
-        
-            <script>
-                const f = document.getElementById('form');
-                const q = document.getElementById('query');
-                const google = 'https://faudiac.github.io/faudibrowser/#gsc.tab=0/search?q=site%3A+';
-                const site = '';
-          
-                function submitted(event) {
-                  event.preventDefault();
-                  const url = google + site + '+' + q.value;
-                  const win = window.open(url, '_blank');
-                  win.focus();
-                }
-          
-                f.addEventListener('submit', submitted);
-              </script>
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
 
-            <a href="https://faudiac.github.io/faudibrowser/#gsc.tab=0">
-                <button class="faudibrowsericon">F</button>
-            </a>
+                <ul id="myMenu">
+                <li><a href="../OfficialFaudyNEWS/Pages/news2.html">News 2</a></li>
+                <li><a href="../OfficialFaudyNEWS/Pages/news3.html">News 3</a></li>
+                <li><a href="../OfficialFaudyNEWS/Pages/news4.html">News 4</a></li>
+                <li><a href="../OfficialFaudyNEWS/Pages/news5.html">News 5</a></li>
+                <li><a href="../OfficialFaudyNEWS/Pages/news6.html">News 6</a></li>
+                </ul>
 
-            <a class="rounded-youtube" href="https://www.youtube.com/channel/UC13KjiIUCVGeKkhdHQIUcCQ">
-                <ion-icon name="logo-youtube" size="large"></ion-icon>
-            </a> 
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                <script>
+                    function myFunction() {
+                      // Declare variables
+                      var input, filter, ul, li, a, i;
+                      input = document.getElementById("mySearch");
+                      filter = input.value.toUpperCase();
+                      ul = document.getElementById("myMenu");
+                      li = ul.getElementsByTagName("li");
+                    
+                      // Loop through all list items, and hide those who don't match the search query
+                      for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                          li[i].style.display = "";
+                        } else {
+                          li[i].style.display = "none";
+                        }
+                      }
+                    }
+                    </script>
 
-            </div>
+
+                <a href="https://faudiac.github.io/faudibrowser/#gsc.tab=0">
+                    <button class="faudibrowsericon">F</button>
+                </a>
+    
+                <a class="rounded-youtube" href="https://www.youtube.com/channel/UC13KjiIUCVGeKkhdHQIUcCQ">
+                    <ion-icon name="logo-youtube" size="large"></ion-icon>
+                </a> 
+                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
         </div>
     </body>

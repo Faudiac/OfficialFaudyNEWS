@@ -190,9 +190,36 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     color: red;
     background-color: rgb(225, 225, 225);
     border-radius: 50px;
     border: 2px solid orangered;
 }
+
+
+#mySearch {
+    width: 90%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the navigation menu */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style the navigation links */
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: rgb(132, 132, 132);
+    display: block
+  }
+  
+  #myMenu li a:hover {
+    background-color: #eee;
+  }

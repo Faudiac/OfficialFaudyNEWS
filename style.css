@@ -197,6 +197,22 @@ input {
     border: 2px solid orangered;
 }
 
+.faudiacicon {
+    margin-top: 50px;
+    font-size: 35px;
+    font-family: monospace;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: orangered;
+    background-color: rgb(255, 242, 0);
+    border-radius: 50px;
+    border: 2px solid orangered;
+}
+
 
 #mySearch {
     width: 90%;

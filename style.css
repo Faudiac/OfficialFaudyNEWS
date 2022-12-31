@@ -21,6 +21,17 @@ h2{
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
 }
+
+h3{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    margin-left: 15px;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
 a{
     text-decoration: none;
     color: orange;

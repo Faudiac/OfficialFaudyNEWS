@@ -32,6 +32,16 @@ h3{
     text-transform: uppercase;
 }
 
+.livetype {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    margin-left: 30px;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
 a{
     text-decoration: none;
     color: orange;
@@ -114,6 +124,15 @@ ul {
     color: red;
     border: 200px orangered;
     margin-left: 6em;
+}
+
+.nav-butn4 {
+    position: absolute;
+    border-radius: 10px;
+    background: yellow;
+    color: red;
+    border: 200px orangered;
+    margin-left: 12em;
 }
 
 .goback-butn{
@@ -248,3 +267,26 @@ input {
   #myMenu li a:hover {
     background-color: #eee;
   }
+
+  #demo{
+    color: orangered;
+    margin-left: 30px;
+    font-size: 50px;
+    font-family: monospace;
+  }
+
+.redcircle {
+    width: 1em;
+    height: 1em;
+    margin-left: 10px;
+    margin-top: 5px;
+    background: red;
+    position: absolute;
+    border-radius: 50px;
+}
+
+.solarsystem-live {
+    width: 90%;
+    margin-left: 1.5em;
+    border-radius: 20px;
+}

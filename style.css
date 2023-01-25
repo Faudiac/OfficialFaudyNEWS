@@ -331,3 +331,28 @@ input {
     0%{left: 480px;}
     100%{left:-40px;}
 }
+
+button {
+    border: 0px;
+    border-radius: 30px;
+    background: rgb(195, 195, 195);
+    margin-bottom: 20px;
+}
+
+.navicons {
+    background: orange;
+    color: white;
+    border-radius: 90px;
+}
+
+#myProgress {
+    width: 100%;
+    border-radius: 20px;
+    background-color: grey;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 3px;
+    background-color: orangered;
+  }

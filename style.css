@@ -334,6 +334,7 @@ input {
 
 button {
     border: 0px;
+    height: auto;
     border-radius: 30px;
     background: rgb(195, 195, 195);
     margin-bottom: 20px;
@@ -356,3 +357,8 @@ button {
     height: 3px;
     background-color: orangered;
   }
+
+
+
+---------------
+

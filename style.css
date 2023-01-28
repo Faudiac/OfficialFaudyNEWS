@@ -359,6 +359,17 @@ button {
   }
 
 
+.lang-butn {
+    width: auto;
+    height: auto;
+    border: 2px solid orangered;
+    color: orangered;
+    background: rgb(20, 20, 20);
+    margin-bottom: 0px;
+    transition-duration: 500ms;
+}
 
----------------
-
+.lang-butn:hover {
+    background: orangered;
+    color: black;
+}

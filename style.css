@@ -6,6 +6,12 @@ body{
     background-color: rgb(20, 20, 20);
     color: white;
 }
+
+.dark-mode {
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+
 h1{
     margin: 0;
     padding: 0;
@@ -17,7 +23,7 @@ h2{
     margin: 0;
     padding: 0;
     font-size: 20px;
-    color: white;
+    color: rgb(242, 92, 37);
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
 }
@@ -27,7 +33,7 @@ h3{
     padding: 0;
     font-size: 20px;
     margin-left: 15px;
-    color: white;
+    color: orangered;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
 }
@@ -94,7 +100,7 @@ ul {
     margin: 0;
     padding: 0;
     font-size: 30px;
-    color: white;
+    color: rgb(255, 68, 35);
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
 }

@@ -3,36 +3,27 @@
 
     <head>
         <title>Faudy News</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
         <link rel="shortcut icon" type="x-icon" href="Faudiax.png">
-        <script src="script.js"></script>
+        <link rel="shortcut icon" type="x-icon" href="../Faudiax.png">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
         <div id="body">
-            <div id="title">
-                <h1>Faudy News</h1>
-                <div id="line1"></div>
-                    <p><a href="watchindex.html" class="nav-butn">Watch Feed</a></p>
-                    <p><a href="info.html" class="nav-butn2">info</a></p>
-                    <p><a href="index.html" class="nav-butn3">home</a></p>
-                    <p><a href="globaltime.html" class="nav-butn4">Global Time</a></p>
-                <div id="line2"></div>
-            </div>
+            <!-- Title Section -->
+            <div class="line1" id="line"></div>
+                <p><a class="nav" href="globaltime.html">Global Time</a> <a class="nav" href="Watchnews index.html">Watch Feed</a>. <a class="nav" href="index.html">Home</a> <a class="nav" href="info.html">Info</a> </p>
+            <div id="line"></div>
+            <h1>Faudy News</h1>
+            <div id="line"></div>
 
             <a href="https://faudiac.github.io/Faudiax/">
                 <button class="faudibrowsericon">
                     <img src="Images/webicon copy.png" alt="Faudiax" width="60px">
                 </button>
             </a>
-
-            <a class="rounded-youtube" href="https://www.youtube.com/channel/UC13KjiIUCVGeKkhdHQIUcCQ">
-                <ion-icon name="logo-youtube" size="large"></ion-icon>
-            </a> 
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
             <a href="https://faudiac.github.io/Faudiac/">
                 <button class="faudiacicon">Fau</button>
@@ -41,18 +32,7 @@
             <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search News.." title="Type in a category">
 
                 <ul id="myMenu">
-                <li><a href="../OfficialFaudyNEWS/Pages/news2.html">Aftermaths of Arg vs Saudi (News 2)</a></li>
-                <li><a href="../OfficialFaudyNEWS/Pages/Feed1.html">Demo news</a></li>
-                <li><a href="../OfficialFaudyNEWS/Pages/news3.html">Future plans for Faudy news (News 3)</a></li>
-                <li><a href="../OfficialFaudyNEWS/Pages/news4.html">Eminems daughter's voice recording on school exam (News 4)</a></li>
-                <li><a href="../OfficialFaudyNEWS/Pages/news5.html">The Eliminations of the nations in World Cup 2022 (News 5)</a></li>
-                <li><a href="../OfficialFaudyNEWS/Pages/news6.html">Lost Dream (News 6)</a></li>
-                <li><a href="../OfficialFaudyNEWS/Pages/news7.html">ARGENTINA TAKES THE TROPHY HOME (News 7)</a></li>
-                <li><a href="../OfficialFaudyNEWS/Pages/news8.html">Ronaldo's back in the game! (News 8)</a></li>
-                <li><a href="../OfficialFaudyNEWS/Pages/news8.html">Ronaldo's back in the game! (News 8)</a></li>
-                <li><a href="../OfficialFaudyNEWS/Pages/news9.html">Loss of Football legend -Pele'-</a></li>
-
-                <li><a href="#"><h2>Support Us</h2></a></li>
+                    <li><a href="globaltime.html">whats the time?</a></li>
                 <li><a href="https://faudiac.github.io/Faudiac/">Faudiac</a></li>
                 <li><a href="https://faudiac.github.io/Faudiax/">Faudiax</a></li>
                 <li><a href="https://faudiac.github.io/faudibrowser/#gsc.tab=0">FaudiBrowser </a></li>
@@ -80,6 +60,42 @@
                       }
                     }
                     </script>
+
+                    <style>
+                        #mySearch {
+    width: 90%;
+    font-size: 18px;
+    padding: 11px;
+    border: 3px solid orangered;
+    background: rgb(20, 20, 20);
+    color: orangered;
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+
+  #mySearch:hover {
+    width: 95%;
+  }
+
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    display: block
+  }
+  
+  #myMenu li a:hover {
+    background-color: orangered;
+    color: black;
+  }
+                    </style>
 
 <div class="game">
     <div class="character"></div>

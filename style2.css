@@ -74,12 +74,6 @@ h2{
     width: 99%;
 }
 
-h3 {
-    color: rgb(140, 140, 140);
-    font-family: 'Kenia', cursive;
-    text-align: right;
-}
-
 .livetype {
     color: rgb(140, 140, 140);
     font-family: 'Kenia', cursive;
@@ -194,7 +188,7 @@ input {
     width: 1em;
     height: 1em;
     margin-left: 10px;
-    margin-top: 5px;
+    margin-top: 15px;
     background: red;
     position: absolute;
     border-radius: 50px;
@@ -243,3 +237,39 @@ input {
     0%{left: 480px;}
     100%{left:-40px;}
 }
+
+.watchnext {
+    background: transparent;
+    color: white;
+    width: 99%;
+    height: 5em;
+    border-radius: 10px;
+    margin-top: 10px;
+    align-items: center;
+    font-family: 'Kenia', cursive;
+    position: relative;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.watchnext:hover {
+    background: rgb(66, 66, 66);
+}
+
+.thumb-vid{
+    width: 40%;
+    height: 50%;
+    margin-left: 10px;
+}
+
+.fa {
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+  }
+  
+  .fa:hover {
+    color: darkblue;
+  }

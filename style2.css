@@ -267,7 +267,6 @@ input {
     font-size: 50px;
     cursor: pointer;
     user-select: none;
-    margin-bottom: 10px;
   }
   
   .fa:hover {

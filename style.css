@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Newsreader:opsz@6..72&display=swap');
+
+body {
+    background: rgb(31, 31, 31);
+    margin: 0;
+}
+
+.body {
+    width: 90%;
+    height: auto;
+    margin: 3em auto;
+}
+
+h1 {
+    font-family: 'Kenia', cursive;
+    font-size: 60px;
+    position: relative;
+    margin-left: 5px;
+    color: orangered;
+}
+  
+h2 {
+    font-family: 'Kenia', cursive;
+    font-size: 30px;
+    position: relative;
+    color: rgb(0, 255, 0);
+}
+
+.topnav {
+    width: 100%;
+    height: 2em;
+    background-color: #333;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    position: fixed;
+}
+
+.selectednav-butn {
+    width: 5em;
+    height: 2.4em;
+    background: orangered;
+    border: 0px;
+    left: 0px;
+    float: left;
+}
+
+.selectednav {
+    width: auto;
+    height: 2.4em;
+    background: #333;
+    border: 0px;
+    left: 0px;
+    transition-duration: 500ms;
+    float: left;
+}
+
+.selectednav:hover {
+    background: orangered;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    position: relative;
+    background: #626262;
+}
+
+img {
+    width: 98.3%;
+    border-radius: 20px;
+    margin: 5px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 #26909a, 0 6px 20px 0 rgb(0, 255, 229); 
+}
+
+.starnews-box {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.starnews {
+    width: 95%;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 #ff4400, 0 6px 20px 0 rgb(255, 132, 0); 
+}
+  
+.news-directnote{
+    font-size: 20px;
+    font-family: monospace;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 0px;
+    background: transparent;
+    color: orangered;
+}
+
+.Readnews-box {
+    width: 95%;
+    height: auto;
+    background: white;
+    border-radius: 20px;
+    border: 3px solid orangered;
+    position: relative;
+    background: transparent;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 #ff4400, 0 6px 20px 0 rgb(255, 132, 0); 
+}
+
+h3 {
+    font-size: 25px;
+    color: orangered;
+    margin: 10px;
+    font-family: 'kenia',cursive;
+}
+
+.news-box {
+    width: 95%;
+    height: 3em;
+    background: white;
+    margin: 5px;
+    border: 2px solid rgb(60, 255, 0);
+    background: transparent;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-butn {
+    font-size: 15px;
+    border: 0px;
+    background: transparent;
+    color: rgb(86, 161, 99);
+}
+
+.note {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 90%;
+    color: rgb(34, 255, 0);
+}
+
+.aurthors-info {
+    width: 100%;
+    height: auto;
+    background: #626262;
+    border-radius: 10px;
+}
+
+.info {
+    margin: 15px;
+}
+
+.back {
+    width: 5em;   
+    height: 2em;
+    border: 0px;
+    border-radius: 50px;
+    background: #ff713d;
+    box-shadow: 0 1px 5px 0 #ff4400, 0 6px 20px 0 rgb(255, 132, 0); 
+    transition-duration: 500ms;
+}
+
+.back:hover {
+    background-color: orangered;
+    box-shadow: 0 1px 5px 0 #ff8a05, 0 6px 20px 0 rgb(255, 184, 41);
+}
+
+input {
+    float: left;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    background-color: #3a3a3a;
+    padding: 5px;
+    font-size: 16px;
+    position: absolute;
+    right: 0px;
+    height: 2em;
+  }
+  
+  input[type=text] {
+    background-color: #f1f1f1;
+    width: 50%;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(255, 71, 30);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 50%;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }

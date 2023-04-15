@@ -11,6 +11,12 @@
 
 <body>
 
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="addbar"></div>
+        </div>  
+      </div>
+
     <div class="body">
 
         <div class="daily-notifications">
@@ -57,6 +63,18 @@
   </form>
 </div>
 
+    <script>
+        // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("addbar").style.width = scrolled + "%";
+}
+    </script>
+
 <script>
     function openForm() {
       document.getElementById("myForm").style.display = "block";
@@ -66,7 +84,7 @@
       document.getElementById("myForm").style.display = "none";
     }
     </script>
-
+  
 </body>
 
 </html>

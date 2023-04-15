@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faudy NEWS</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" type="x-icon" href="../Faudiax.png">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="addbar"></div>
+        </div>  
+      </div>
+
+    <div class="body">
+
+        <div class="daily-notifications">
+            <img src="../Ramadan Poster.png" alt="ramadan poster">
+        </div>
+
+        <h2>Bunnies on Sale!!</h2>
+
+        <p class="note">
+            Bunnies on Sale!, the Meemi Seenies business has started selling Bunnies and Rabbits 
+            since the begining of Ramadan 2023. Bunnies are one of the cutest and funniest pets.
+            Although Bunnies and Rabbits are very expensive and hard to find. 
+        </p>
+            <img src="../Images/News-12 (Pic2).png" alt="Star News" class="starNews">
+
+        <p class="note">
+            Who is selling these Bunnies and Rabbits..? Owner and founder of Meemi Seenies who's name 
+            is Malee are selling these cute animals for a fair amount of cash. What Malee is selling is 
+            Male & Female Rabbits for around MVR 200 to 300, Although many people might take this as a 
+            pretty large amount of cash but compared to the regular price it is fairly more affordable.
+        </p>
+
+        <img src="../Images/News-12 (Pic3).png" alt="Star News" class="starNews">
+        <img src="../Images/News - 12 (pic1).png" alt="Star News" class="starNews">
+
+        <p class="note">
+            How can i buy one ? You can Easy contact the owner of Meemi Seenies by the phone number 
+            "7707416" and you can also get more information.
+        </p>
+
+        <p class="note">
+            Can i trust Meemi Seenies..? Yes offcourse. Meemi Seenies has successfully sold many Rabbits 
+            in the past and can also deliver you even if you weren't in Male' the Bunnies and Rabits FOR FREE!! so if you want a Bunnie 
+            or Rabbit as your pet you know whom to call .. BUNNIES ON SALE!!
+        </p>
+
+        <div class="aurthors-info">
+            <p class="Info">Written By : Faudy</p>
+            <p class="Info">Sponsering : Meemi Seenies</p>
+            <p class="Info">date By : Saturday 15th April / Ramadan 25th 2023</p>
+        </div>
+
+        <a href="../index.html">
+            <button class="back">Go Back</button>
+        </a>
+
+    </div>
+
+    <button class="open-button" onclick="openForm()">Comment</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2>Comment</h2>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <a href="#">
+        <button type="" class="btn">Send</button>
+    </a>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+    <script>
+        // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("addbar").style.width = scrolled + "%";
+}
+    </script>
+
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+  
+</body>
+
+</html>

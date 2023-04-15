@@ -385,3 +385,56 @@ button {
   color: white;
   background-color: orangered;
 }
+
+.Main-Headlines {
+  width: 90%;
+  height: auto;
+  margin: 1em auto;
+  background: #111010;
+  border-radius: 20px;
+  position: relative;
+}
+
+.M-head {
+  font-family: 'kenia' cursive;
+  color: orangered;
+  padding: 15px;
+}
+
+.line2 {
+  width: 90%;
+  margin-left: 14px;
+  margin-top: 5px;
+  height: 2px;
+  background: #333;
+}
+
+.news-link {
+  width: 100%;
+  height: 8em;
+  background: rgba(255, 255, 255, 0);
+  margin-top: 5px;
+}
+
+.news-link:hover {
+  background: rgba(255, 255, 255, 0.209);
+}
+
+.news-thumb {
+  width: 150px;
+  margin-top: 15px;
+  margin-left: 20px;
+  box-shadow: none; 
+  position: absolute;
+  border-radius: 5px;
+}
+
+.Text-link {
+  position: relative;
+  margin-top: 40px;
+  margin-left: 12em;
+  font-size: 15px;
+  border: 0px;
+  background: transparent;
+  color: orangered;
+}

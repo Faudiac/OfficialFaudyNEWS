@@ -390,6 +390,16 @@ button {
   background-color: orangered;
 }
 
+.di {
+  margin:15px;
+  padding:4px;
+  width: 90%;
+  height: 30%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+}
+
 .Main-Headlines {
   width: 90%;
   height: auto;

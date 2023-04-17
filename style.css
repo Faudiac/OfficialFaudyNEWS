@@ -184,6 +184,8 @@ h3 {
     border-radius: 20px;
     border: 2px white solid;
     margin-bottom: 10px;
+    float: left;
+    margin-left: 10px;
 }
 
 .pfpcircle {
@@ -349,13 +351,6 @@ h3 {
   cursor: pointer;
 }
 
-input {
-  width: 80%;
-  height: 3em;
-  border-radius: 50px;
-  border: 1px solid rgb(185, 185, 185);
-  padding: 5px;
-}
 
 button {
   height: 3em;
@@ -409,16 +404,22 @@ button {
   background: #333;
 }
 
+.line3 {
+  width: 90%;
+  margin-left: 14px;
+  height: 1px;
+  background: #333;
+}
+
 .news-link {
   width: 100%;
   height: 8em;
   background: rgba(255, 255, 255, 0);
-  margin-top: 5px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .news-link:hover {
-  background: rgba(255, 255, 255, 0.209);
+  background: rgba(255, 255, 255, 0.043);
 }
 
 .news-thumb {
@@ -438,4 +439,35 @@ button {
   border: 0px;
   background: transparent;
   color: orangered;
+}
+
+.Search-butn {
+  color: black;
+  position: absolute;
+  width: 2.4em;
+  height: 2.4em;
+  border: 1px solid rgb(96, 96, 96);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 85%;
+  height: 3em;
+  text-align: center ;
+  border-radius: 50px;
+  border: 1px solid rgb(96, 96, 96);
+  padding: 5px;
+}
+
+.News-Categories {
+  width: 90%;
+  height: auto;
+  margin: 1em auto;
+  background: #111010;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 30px;
 }

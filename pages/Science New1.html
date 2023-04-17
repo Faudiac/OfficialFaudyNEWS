@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faudy NEWS</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" type="x-icon" href="../Faudiax.png">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="addbar"></div>
+        </div>  
+      </div>
+
+    <div class="body">
+
+        <div class="daily-notifications">
+            <img src="../Ramadan Poster.png" alt="ramadan poster">
+        </div>
+
+        <h2>Blast Off to jupiters icy moons!</h2>
+
+        <img src="../Images/science news 1.png" alt="Star News" class="starNews">
+
+        <p class="note">
+            The European Space Agency (ESA) successfully launched its JUICE spacecraft to 
+            study Jupiter’s icy moons on Friday, April 14th. The Jupiter Icy Moons Explorer 
+            mission will visit three of Jupiter’s largest moons — Europa, Ganymede, and 
+            Callisto — to investigate whether they could be potentially habitable, a question 
+            that has been igniting debate among astronomers since the first evidence of subsurface
+            oceans on these moons was seen by the Galileo mission in the 1990s. 
+        </p>
+
+        <p class="note">
+            The Mission for the Juice space rocket is to investigate whether Jupiter’s moons could potentially 
+            be habitable. The launch had to occur within a tiny window of just one second in order to work with 
+            the spacecraft’s complex trajectory. The spacecraft will start its orbit around the Earth soon making 
+            a fly by of Earth and moon in August 2024.
+        </p>
+
+        <h3> HOW WILL WE REACH JUPITER </h3>
+
+        <p class="note">
+            “We have to launch on the second in order to have the right trajectory towards the first 
+            orbit around the Sun that will allow us to come back to Earth,” ESA payload system engineer 
+            Alessandro Atzei explained in a prelaunch briefing. 
+        </p>
+
+        <p class="note">
+            Basically they are using gravity of Planets to take us to Jupiter.. (FOR those who don't understand
+            learn more about "GRAVITY" on <a href="https://faudiac.github.io/Faudiac/"> Faudiac</a> )
+        </p>
+        
+
+            <img src="../Images/Science news thumb.png" alt="Star News" class="starNews">
+
+        <h3> WHEN WILL THE SPACE SHIP REACH JUPITER </h3>
+
+        <p class="note">
+            The probe will arrive at the Jupiter system in 2031. These instruments will be used to
+             investigate Jupiter’s moons, with a particular focus on Ganymede. Ganymede is unusual in 
+             that it is the largest moon in the solar system and the only moon known to produce its own magnetic 
+             field. That magnetic field sits within the powerful magnetic field of Jupiter, and the two interact 
+             producing strong auroras around the moon. Ganymede’s surface is also of interest as it varies in age,
+              with both smooth younger terrain and areas of much older pockmarked terrain, which can help scientists 
+              understand how the Jupiter system evolved over billions of years.
+        </p>
+
+        <h3> What are we expecting </h3>
+
+        <p class="note">
+            We humans are expecting habitability of life on other plannets but Earth and to do so we 
+            have to search the Jupiter system.. 
+        </p>
+
+        <p class="note">
+            Learn more about jupiter on <a href="https://faudiac.github.io/Faudiac/"> Faudiac</a>
+        </p>
+
+        <div class="aurthors-info">
+            <p class="Info">Written By : Faudy</p>
+            <p class="Info">Catogories : Science/astronomy</p>
+            <p class="Info">date : Saturday 15th April / Ramadan 25th 2023</p>
+        </div>
+
+        <div class="aurthors-info">
+            <p class="Info">Sources</p>
+            <p class="Info">theverge.com</p>
+            <p class="Info">Google News</p>
+        </div>
+
+        <a href="../index.html">
+            <button class="back">Go Back</button>
+        </a>
+
+    </div>
+
+    <button class="open-button" onclick="openForm()">Comment</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2>Comment</h2>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <a href="#">
+        <button type="" class="btn">Send</button>
+    </a>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+    <script>
+        // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("addbar").style.width = scrolled + "%";
+}
+    </script>
+
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+  
+</body>
+
+</html>

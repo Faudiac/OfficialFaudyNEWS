@@ -91,6 +91,15 @@ img {
     box-shadow: 0 4px 8px 0 #ff4400, 0 6px 20px 0 rgb(255, 132, 0); 
 }
   
+.starnews2 {
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 15px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 #ff4400, 0 6px 20px 0 rgb(255, 132, 0); 
+}
+
 .news-directnote{
     font-size: 25px;
     font-family: monospace;
@@ -456,6 +465,7 @@ button {
 input {
   width: 85%;
   height: 3em;
+  margin-left: 3.5em;
   text-align: center ;
   border-radius: 50px;
   border: 1px solid rgb(96, 96, 96);
@@ -470,5 +480,16 @@ input {
   border-radius: 20px;
   position: relative;
   margin-bottom: 30px;
-  urmom 
+}
+
+.Back-butn {
+  font-size: 15px;
+  border: 0px;
+  border-radius: 50px;
+  background: #ff6325;
+  transition-duration: 500ms;
+}
+
+.Back-butn:hover {
+  background: orangered;
 }

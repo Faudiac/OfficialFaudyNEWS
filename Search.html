@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaudyNEWS-search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="body">
+
+      <div class="daily-notifications">
+        <img src="Eid Poster.png" alt="eid poster" class="posterpic">
+    </div>
+
+              <h2>Search NEWS</h2>
+              <form action="#">
+                <div class="search-container">
+                  <input type="search" id="mySearch" onkeyup="myFunction()" placeholder="let your curiosity guide you.." title="Type your search here">
+                  <div class="lineverticle"></div>
+                  <a class="Search-butn" href="#">
+                    <ion-icon name="search-outline" size="large"></ion-icon>
+                  </a> 
+                  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                </div>
+                <div class="di">
+                  <ul id="myMenu">
+                    <li><a href="./pages/Science New1.html">Blast Off to jupiters icy moons</a></li>
+                    <li><a href="./pages/news12.html">Bunnies on sale!!</a></li>
+                    <li><a href="./pages/news 1.html">Psg vs Alnasr</a></li>
+                    <div class="line"></div>
+                    <li><a href="https://faudiac.github.io/OfficialFaudyNEWS/chess/main.html">Chessboard.fau</a></li>
+                    <li><a href="https://faudiac.github.io/OfficialFaudyNEWS/">Faudy News.fau</a></li>
+                    <li><a href="https://faudiac.github.io/Faudiax/">Faudiax</a></li>
+                    <li><a href="https://faudiac.github.io/FauHathim/">FauHathim</a></li>
+                    <li><a href="https://www.youtube.com/">Fauditube</a></li>
+                  </ul>
+                </div>
+              </form>
+
+    </div>
+
+    <div class="topnav">
+
+        <a href="index.html">
+          <img src="Name.png" alt="FaudyNEWS" class="WebHome">
+        </a>
+  
+        <button class="opennav" onclick="openNav()">☰</button> 
+          
+    </div>
+
+    <script>
+        function myFunction() {
+          // Declare variables
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("mySearch");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myMenu");
+          li = ul.getElementsByTagName("li");
+        
+          // Loop through all list items, and hide those who don't match the search query
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+      </script>
+  
+        <script>
+          function openNav() {
+            document.getElementById("myNav").style.width = "80%";
+          }
+    
+          function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+        </script>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+            <a href="About US.html">About</a>
+            <a href="">Services(Comming Soon)</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

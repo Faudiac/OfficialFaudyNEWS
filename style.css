@@ -148,7 +148,15 @@ h3 {
     margin-top: 20px;
     margin-left: 20px;
     width: 90%;
-    color: rgb(34, 255, 0);
+    color: rgb(79, 152, 70);
+}
+
+.noteCAP {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 90%;
+  color: rgb(105, 21, 21);
 }
 
 .aurthors-info {
@@ -560,4 +568,55 @@ h3 {
   top: 15px;
   right: 35px;
   }
+}
+
+.OpenPop {
+  position: relative;
+  border: 0px;
+  margin: 10px;
+}
+
+.TermofPop {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.TermofPop-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.TermofPop .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.TermofPop .closebtn:hover {
+  color: #ccc;
+}
+
+.UpPOP {
+  width: 80%;
+  height: 30%;
+  background: white;
+  border-radius: 10px;
+  margin: 2em auto;
+  overflow: auto;
+  overflow-x:hidden;
+  text-align:justify;
 }

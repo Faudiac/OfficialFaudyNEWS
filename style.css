@@ -416,6 +416,21 @@ h3 {
   color: orangered;
 }
 
+.Text-linkdark {
+  position: relative;
+  margin-top: 40px;
+  margin-left: 10em;
+  font-size: 15px;
+  border: 0px;
+  font-size: 18px;
+  background: transparent;
+  color: rgb(255, 255, 255);
+}
+
+.Text-linkdark:hover {
+  color: orangered;
+}
+
 .Text-link2 {
   position: relative;
   margin: 15px;

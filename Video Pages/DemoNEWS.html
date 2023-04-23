@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faudy NEWS</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" type="x-icon" href="../Faudiax.png">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+
+    <div class="body">
+
+        <div class="daily-notifications">
+            <img src="../Eid Poster.png" alt="Eid poster">
+        </div>
+
+        <video src="../Videos/Faudy news 11.mp4" controls width="100%"></video>
+
+        <h2>Bunnies on Sale!!</h2>
+
+        <button class="CommentON-butn" onclick="openForm()">
+            <a class="Search-butn">
+                <ion-icon name="chatbox-outline" size="large"></ion-icon>
+              </a> 
+              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </button>
+
+        <div class="aurthors-info">
+            <p class="Info">Written By : Faudy</p>
+            <p class="Info">First Video</p>
+        </div>
+
+        <a href="../index.html">
+            <button class="back">Go Back</button>
+        </a>
+
+    </div>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2>Comment</h2>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <a href="#">
+        <button type="" class="btn">Send</button>
+    </a>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+    <script>
+        // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("addbar").style.width = scrolled + "%";
+}
+    </script>
+
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+  
+</body>
+
+</html>

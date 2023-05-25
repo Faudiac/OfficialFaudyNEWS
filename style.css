@@ -13,6 +13,11 @@ body {
     margin: 3em auto;
 }
 
+.body3 {
+  width: 90%;
+  height: auto;
+  margin: 10em auto;
+}
 
 h1 {
     font-family: 'Kenia', cursive;
@@ -543,37 +548,51 @@ h3 {
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
+  background-color: rgb(9, 9, 9);
+  overflow-y: hidden;
   transition: 0.5s;
 }
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 15%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
 }
 
 .overlay a {
+  width: 90%;
+  height: 2em;
+  margin: 15px;
   padding: 8px;
   text-decoration: none;
-  font-size: 30px;
-  color: #818181;
+  font-size: 20px;
+  color: #3c3c3c;
+  background: rgba(255, 255, 255, 0);
   display: block;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
 }
 
 .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
+  background: #ff550044;
 }
 
 .overlay .closebtn {
   position: absolute;
+  width: 1em;
+  height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 20px;
   right: 45px;
   font-size: 60px;
+  border-radius: 50px;
 }
 
 @media screen and (max-height: 450px) {

@@ -437,10 +437,8 @@ h3 {
 }
 
 .Text-link2 {
-  position: relative;
   margin: 15px;
-  font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12px;
   border: 0px;
   font-size: 18px;
   background: transparent;
@@ -522,7 +520,7 @@ h3 {
 
 .supportus {
   width: 100%;
-  height: 90%;
+  height: 73%;
   background: black;
 }
 
@@ -623,4 +621,66 @@ video {
 .CommentON-butn:hover {
   background: rgb(95, 95, 95);
   color: black;
+}
+
+.followbutn {
+  width: 3em;
+  height: 3em;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin-left: 10px;
+  float: left;
+}
+
+.followbutn-you {
+  width: 3em;
+  height: 3em;
+  background: white;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin-left: 10px;
+  float: left;
+}
+
+h4 {
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: rgb(81, 166, 81);
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #ffffff00;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ff712f38;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #f1f1f11a;
+  margin-bottom: 10px;
+  color: white;
 }

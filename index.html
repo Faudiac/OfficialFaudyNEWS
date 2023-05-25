@@ -102,7 +102,7 @@
 
       <h2 class="M-head">More HEADLINES</h2>
 
-      <div class="line2"></div>
+      <div class="line3"></div>
 
       <a href="./pages/Science New1.html">
         <div class="news-link"> 
@@ -112,6 +112,8 @@
         </div>
       </a>
 
+      <div class="line3"></div>
+
       <a href="./pages/news 1.html">
         <div class="news-link"> 
           <img src="./Images/Psg Vs Al Nasr.jpeg" alt="Thumb" class="news-thumb">
@@ -120,21 +122,72 @@
         </div>
       </a>
 
+      <div class="line3"></div>
     </div>
-
-    </div>
-
+    
     <div class="supportus">
-      <h4>Support US</h2>
 
-      <p class="Text-link2">
-        Update 4.0
-      </p>
+      <div class="body">
+        
+        <img src="Name.png" alt="FaudyNEWS" class="WebHome">
 
-      <p class="Text-link2">
-        Read more about this update on the
-        <a href="About US.html">About US</a> page
-      </p>
+        <h4>Support US</h4>
+  
+        <p class="Text-link2">
+          Update 4.0
+        </p>
+  
+        <p class="Text-link2">
+          Read more about this update on the
+          <a href="About US.html">About US</a> page
+        </p>
+  
+        <div class="line3"></div>
+
+        <button type="button" class="collapsible"> Our Partners </button>
+        <div class="content">
+            <div class="line2"></div>
+    
+            <p class="Descriptions2">
+              - Meemi Seenies <a href="./pages/news12.html">learn more about from (@Meemi Seenies)</a>
+            </p>
+
+            <p class="Descriptions2">
+              - Sky
+            </p>
+
+        </div>
+
+        <button type="button" class="collapsible"> @Faudiax 2023 </button>
+        <div class="content">
+            <div class="line2"></div>
+    
+            <p class="Descriptions2">
+              5 months in business
+            </p>
+
+        </div>
+
+        <div class="line3"></div>
+
+      </div>
+
+      <div class="body">
+        <h2>Follow us</h2>
+
+        <a class="followbutn" href="https://discord.gg/97N3e2Yz">
+          <ion-icon name="logo-discord" size="large"></ion-icon>
+        </a> 
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+        <a class="followbutn-you" href="https://www.youtube.com/@FaudiaxProductions">
+          <ion-icon name="logo-youtube" size="large"></ion-icon>
+        </a> 
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+      </div>
 
     </div>
     
@@ -198,7 +251,20 @@
       </script>
 
       <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
 
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
       </script>
 
 <script src="script.js"></script>

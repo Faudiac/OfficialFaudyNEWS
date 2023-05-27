@@ -797,3 +797,72 @@ h4 {
 #myTable tr.header, #myTable tr:hover {
   background-color: #f1f1f148;
 }
+
+
+.audiobox {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.Audiobox-content {
+  position: relative;
+  top: 90%;
+  width: 80%;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin: auto;
+  border-radius: 10px;
+  background: #000000db;
+}
+
+.AudioName {
+  font-size: 20px;
+  color: white;
+}
+
+.ControlAudio {
+  width: 4em;
+  height: 4em;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 0px;
+  background: transparent;
+  color: white;
+}
+
+.ControlAudio:hover {
+  background: rgba(255, 255, 255, 0.233);
+}
+
+.audiobox .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 45px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  width: 1.5em;
+  height: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.audiobox .closebtn:hover {
+  color: #ccc;
+  background: rgba(255, 255, 255, 0.233);
+}
+

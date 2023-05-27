@@ -131,43 +131,20 @@
 
           <table id="myTable">
             <tr>
-              <td>▷ FaudyNEWS Intro</td>
+              <td onclick="AudioPlay()">▷ FaudyNEWS Intro</td>
               <td>sfx</td>
               <td>00:15</td>
-            </tr>
-            <tr>
-              <td>▷ General Information</td>
-              <td>memo</td>
-              <td>00:00</td>
             </tr>
             <tr>
               <td>▷ Demo News</td>
               <td>memo</td>
               <td>00:00</td>
             </tr>
-            <tr>
-              <td>▷ General Information</td>
-              <td>memo</td>
-              <td>00:00</td>
-            </tr>
-            <tr>
-              <td>▷ General Information</td>
-              <td>memo</td>
-              <td>00:00</td>
-            </tr>
-            <tr>
-              <td>▷ General Information</td>
-              <td>memo</td>
-              <td>00:00</td>
-            </tr>
-            <tr>
-              <td>▷ General Information</td>
-              <td>memo</td>
-              <td>00:00</td>
-            </tr>
           </table>
         </ul>
       </div>
+
+      <script src="audioplay.js"></script>
 
       <div class="line3"></div>
 
@@ -380,6 +357,47 @@
           
         </div>
       </div>
+
+      <div id="AudioPlayer" class="audiobox">
+        <div class="Audiobox-content">
+
+          <button onclick="playAudio()" type="button" class="ControlAudio"> ▷ </button>
+          <button onclick="pauseAudio()" type="button" class="ControlAudio"> I I</button> 
+
+          <p class="AudioName">FaudyNEWS intro</p>
+
+          <audio id="myAudio">
+            <source src="./Videos/FaudyNews Intro.m4a" type="audio/ogg">
+            <source src="./Videos/FaudyNews Intro.m4a" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+          <span class="closebtn" onclick="closeAudio()" title="Close Overlay">×</span>
+
+        </div>
+      </div>
+
+      <script>
+        var x = document.getElementById("myAudio"); 
+
+        function playAudio() { 
+          x.play(); 
+        } 
+
+        function pauseAudio() { 
+          x.pause(); 
+        } 
+      </script>
+
+      <script>
+        function AudioPlay() {
+          document.getElementById("AudioPlayer").style.display = "block";
+        }
+  
+        function closeAudio() {
+          document.getElementById("AudioPlayer").style.display = "none";
+        }
+      </script>
 </body>
 
 </html>

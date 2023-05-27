@@ -474,6 +474,19 @@ h3 {
   border-radius: 50px;
 }
 
+.search-container2 {
+  width: 90%;
+  margin: 10px;
+  height: 2.5em;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.604);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50px;
+}
+
 .lineverticle {
   width: 1px;
   height: 70%;
@@ -681,4 +694,106 @@ h4 {
   background-color: #f1f1f11a;
   margin-bottom: 10px;
   color: white;
+}
+
+.FauPlaybody {
+  width: 90%;
+  margin: 3em auto;
+  background: linear-gradient(orangered, rgb(228, 85, 33), rgb(215, 95, 51), rgb(237, 120, 81), rgb(241, 186, 144), rgb(249, 249, 249));
+  border-radius: 20px;
+}
+
+.pfpbox {
+  width: 100px;
+  padding: 10px;
+  position: absolute;
+}
+
+.pfpsquare {
+  border: 3px solid snow;
+  background: rgba(255, 250, 250, 0.319);
+}
+
+.di2 {
+  margin: 1em auto;
+  margin-left: 10px;
+  padding: 4px;
+  width: 90%;
+  height: 30%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+}
+
+.FauPLAYh1 {
+  font-size: 30px;
+  color: white;
+  margin-left: 4.3em;
+  position: relative;
+}
+
+.fauplayp {
+  font-size: 13px;
+  color: white; 
+  margin-left: 10em;
+  position: relative;
+  margin-bottom: 8%;
+}
+
+.fauplayp-black {
+  font-size: 13px;
+  color: rgb(0, 0, 0); 
+  margin-left: 10px;
+  position: relative;
+}
+
+.followus {
+  width: 7.5em;
+  height: 2.5em;
+  margin-left: 15px;
+  border-radius: 20px;
+  border: 1px solid rgb(54, 54, 54);
+  background: #00000089;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.followus:hover{
+  background: rgba(255, 255, 255, 0.195);
+}
+
+.followus2 {
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: 5px;
+  border-radius: 20px;
+  border: 1px solid rgb(54, 54, 54);
+  background: #00000089;
+  color: white;
+  margin-bottom: 10px;
+  size: 10px;
+}
+
+.followus2:hover{
+  background: rgba(255, 255, 255, 0.195);
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #dddddd00;
+  font-size: 16px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #dddddd00;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f148;
 }

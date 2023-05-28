@@ -136,9 +136,9 @@
               <td>00:15</td>
             </tr>
             <tr>
-              <td>▷ Demo News</td>
+              <td onclick="AudioPlay2()">▷ The Greatest Ever</td>
               <td>memo</td>
-              <td>00:00</td>
+              <td>00:09</td>
             </tr>
           </table>
         </ul>
@@ -361,15 +361,10 @@
       <div id="AudioPlayer" class="audiobox">
         <div class="Audiobox-content">
 
-          <button onclick="playAudio()" type="button" class="ControlAudio"> ▷ </button>
-          <button onclick="pauseAudio()" type="button" class="ControlAudio"> I I</button> 
-
           <p class="AudioName">FaudyNEWS intro</p>
 
-          <audio id="myAudio">
-            <source src="./Videos/FaudyNews Intro.m4a" type="audio/ogg">
-            <source src="./Videos/FaudyNews Intro.m4a" type="audio/mpeg">
-            Your browser does not support the audio element.
+          <audio controls>
+            <source src="./Videos/FaudyNews Intro.m4a">
           </audio>
 
           <span class="closebtn" onclick="closeAudio()" title="Close Overlay">×</span>
@@ -377,16 +372,28 @@
         </div>
       </div>
 
+      <div id="AudioPlayer2" class="audiobox">
+        <div class="Audiobox-content">
+
+          <p class="AudioName">The greatest ever</p>
+
+          <audio controls>
+            <source src="./Videos/The Greatest ever.m4a">
+          </audio>
+          
+          <span class="closebtn" onclick="closeAudio2()" title="Close Overlay">×</span>
+
+        </div>
+      </div>
+
       <script>
-        var x = document.getElementById("myAudio"); 
-
-        function playAudio() { 
-          x.play(); 
-        } 
-
-        function pauseAudio() { 
-          x.pause(); 
-        } 
+        function AudioPlay2() {
+          document.getElementById("AudioPlayer2").style.display = "block";
+        }
+  
+        function closeAudio2() {
+          document.getElementById("AudioPlayer2").style.display = "none";
+        }
       </script>
 
       <script>

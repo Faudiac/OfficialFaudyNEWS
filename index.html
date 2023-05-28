@@ -140,6 +140,21 @@
               <td>memo</td>
               <td>00:09</td>
             </tr>
+            <tr>
+              <td onclick="FauPlayPop()">▷ Demo News</td>
+              <td>news</td>
+              <td>02:10</td>
+            </tr>
+            <tr>
+              <td onclick="FauPlayPop()">▷ Sponsering your business</td>
+              <td>annoucement</td>
+              <td>01:10</td>
+            </tr>
+            <tr>
+              <td onclick="FauPlayPop()">▷ how FaudyNEWS became a business </td>
+              <td>annoucement</td>
+              <td>01:10</td>
+            </tr>
           </table>
         </ul>
       </div>
@@ -390,6 +405,34 @@
         </div>
       </div>
 
+      <div id="FauPlayUI" class="FauPlayPOP">
+        <span class="closePOPbtn" onclick="closeFauPop()" title="Close Overlay">×</span>
+        
+        <div class="FauplayUI-content">
+
+          <div class="pfpbox">
+            <img src="Faudiax.png" alt="Faudiax pfp" class="pfpsquare">
+          </div>
+          
+          <h1 class="FauPLAYh1">Official FauPlay™</h1>
+    
+          <p class="fauplayp">
+            Let your curiosity guide you.
+          </p>
+
+          <div class="line3"></div>
+          <p class="p">
+            Join FauPlay and listen to many amazing podcasts.
+          </p>
+
+          <a href="">
+            <button class="FauPlaySignUp-butn">Sign Up</div>
+          </a>
+          
+        
+        </div>
+      </div>
+
       <script>
         function AudioPlay2() {
           document.getElementById("AudioPlayer2").style.display = "block";
@@ -409,6 +452,16 @@
           document.getElementById("AudioPlayer").style.display = "none";
         }
       </script>
+
+<script>
+  function FauPlayPop() {
+    document.getElementById("FauPlayUI").style.display = "block";
+  }
+
+  function closeFauPop() {
+    document.getElementById("FauPlayUI").style.display = "none";
+  }
+</script>
 </body>
 
 </html>

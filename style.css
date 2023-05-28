@@ -868,3 +868,11 @@ audio {
   width: 90%;
   margin: 5px;
 }
+
+.p {
+  font-size: 13px;
+  color: white; 
+  margin-left: 10px;
+  position: relative;
+  margin-bottom: 5px;
+}

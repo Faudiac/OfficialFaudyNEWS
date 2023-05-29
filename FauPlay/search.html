@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FauPlay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="Faudiax.png">
+</head>
+
+<body>
+    
+    <div class="body">
+        
+        <form action="#">
+            <div class="search-container">
+              <input type="search" id="mySearch" onkeyup="myFunction()" placeholder="let your curiosity guide you.." title="Type your search here">
+              <div class="lineverticle"></div>
+              <a class="Search-butn" href="#">
+                <ion-icon name="search-outline" size="large"></ion-icon>
+              </a> 
+              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            </div>
+
+            <div class="di2">
+                <ul id="myMenu">
+
+                    <table id="myTable">
+                        <tr>
+                            <td><a href="./Playlists/Official FaudyNEWS.html">▷ Official FaudyNEWS™</a></td>
+                            <td>Playlist</td>
+                            <td>2:35</td>
+                        </tr>
+                        <tr>
+                            <td onclick="AudioPlay2()">▷ Fau ads</td>
+                            <td>memo</td>
+                            <td>00:09</td>
+                        </tr>
+                    </table>
+                </ul>
+            </div>
+          </form>
+
+    </div>
+
+    <div class="topbody">
+
+        <button class="opennav" onclick="openNav()">☰</button> 
+        
+        <img src="Faudiax.png" alt="" class="LogoTop">
+        <h1>FauPlay</h1>
+
+    </div>
+
+    <div class="bottombody">
+
+        <a href="index.html" class="Bottombar-Search">
+            <ion-icon name="home-outline" size="large"></ion-icon>
+        </a>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+        <a href="search.html" class="Bottombar-Search">
+            <ion-icon name="search-outline" size="large"></ion-icon>
+        </a>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <a href="" class="Bottombar-Search">
+            <ion-icon name="apps-outline" size="large"></ion-icon>
+        </a>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        
+    </div>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <div class="butns-nav">
+                <a href="index.html">Home</a>
+                <a href="search.html">Search</a>
+                <a href="About US.html">About</a>
+            </div>
+
+          <div class="line3"></div>
+
+            <div class="butns-nav">
+                <a href="Services.html">Video's</a>
+                <a href="Services.html">Audio's</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        function myFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("mySearch");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
+        </script>
+
+</body>
+
+</html>

@@ -670,3 +670,8 @@ q {font-style: italic;}
   margin-left: 7em;
   margin-bottom: 5px;
 }
+
+.note-white {
+  margin-left: 10px;
+  color: white;
+}

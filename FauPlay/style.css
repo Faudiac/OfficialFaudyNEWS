@@ -114,14 +114,15 @@ body {
   overflow-y: auto;
   text-align: justify;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.399);
+  background: rgba(0, 0, 0, 0);
 }
 
 .FauPlaybody {
-  width: 90%;
-  margin: 3em auto;
+  width: 100%;
+  right: 0;
+  left: 0;
+  margin-top: 5em;
   background: linear-gradient(orangered, rgb(228, 85, 33), rgb(215, 95, 51), rgb(237, 120, 81), rgb(241, 186, 144), rgb(249, 249, 249));
-  border-radius: 20px;
 }
 
 .pfpbox {
@@ -195,7 +196,7 @@ body {
   width: 100%;
   border: 1px solid #dddddd00;
   font-size: 15px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 #myTable th, #myTable td {
@@ -226,11 +227,11 @@ body {
 .Audiobox-content {
   position: relative;
   top: 75%;
-  width: 80%;
+  width: 95%;
   margin-top: 30px;
   margin: auto;
   border-radius: 10px;
-  background: #000000db;
+  background: #ffffff32;
 }
 
 .AudioName {
@@ -281,6 +282,7 @@ audio {
   margin: 5px;
   color: rgba(255, 255, 255, 0.229);
 }
+
 
 .p {
   font-size: 13px;
@@ -666,7 +668,7 @@ q {font-style: italic;}
 }
 
 .trackdiscription {
-  color: white;
+  color: rgba(255, 255, 255, 0.577);
   margin-left: 7em;
   margin-bottom: 5px;
 }

@@ -28,7 +28,7 @@ const music_list = [
         music : '../Audio/FaudyNEWS Intro.m4a'
     },
     {
-        img : './thumbnails/Rickroll.png',
+        img : '../thumbnails/Rickroll.png',
         name : 'A supriser',
         artist : 'Rick Ashley',
         music : '../Audio/The Greatest ever.m4a'

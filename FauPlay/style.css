@@ -67,7 +67,7 @@ body {
 
 .search-container2 {
   width: 90%;
-  margin: 1em auto;
+  margin: 10px;
   height: 2.5em;
   font-size: 15px;
   background: rgba(255, 255, 255, 0.604);
@@ -598,7 +598,7 @@ q {font-style: italic;}
 /***/
 
 .Bottombar-Search {
-  width: 33.2%;
+  width: 25%;
   height: 3.5em;
   bottom: 0px;
   background: rgba(255, 255, 255, 0);
@@ -677,3 +677,16 @@ q {font-style: italic;}
   margin-left: 10px;
   color: white;
 }
+
+.Playlist-auto {
+  width: 3em;
+  height: 3em;
+  background: rgb(94, 183, 94);
+  font-size: 20px;
+  border: 0px;
+  border-radius: 50px;
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+

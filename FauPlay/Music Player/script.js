@@ -24,14 +24,20 @@ const music_list = [
     {
         img : '../Faudiax.png',
         name : 'FaudyNEWS - Intro',
-        artist : 'Faudiax productions',
-        music : '../Audio/FaudyNEWS Intro.m4a'
+        artist : 'Faudiax Productions',
+        music : '../Audio/FaudyNews Intro.m4a'
     },
     {
         img : '../thumbnails/Rickroll.png',
         name : 'A supriser',
         artist : 'Rick Ashley',
         music : '../Audio/The Greatest ever.m4a'
+    },
+    {
+        img : '../Faudiax.png',
+        name : 'Environment Tides',
+        artist : 'Faudiax Productions',
+        music : '../Audio/Enviroment Sounds.m4a'
     },
 ];
 

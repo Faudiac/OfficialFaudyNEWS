@@ -4,41 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FauPlay-Search</title>
+    <title>FauPlay-News</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="x-icon" href="Faudiax.png">
 </head>
 
 <body>
-    
-    <div class="body">
-        
-        <form action="#">
-            <div class="search-container">
-              <input type="search" id="mySearch" onkeyup="myFunction()" placeholder="let your curiosity guide you.." title="Type your search here">
-              <div class="lineverticle"></div>
-              <a class="Search-butn" href="#">
-                <ion-icon name="search-outline" size="large"></ion-icon>
-              </a> 
-              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            </div>
 
-            <div class="di2">
-                <ul id="myMenu">
+    <div class="NewsBOX">
+        <div class="NEWSHEAD">Welcome to FauPLAY</div>
 
-                  <li><a href="SearchResults/R=Faudynew.html">Official FaudyNEWS</a></li> 
-
-                  <div class="line2"></div>
-                  <li><a href="https://faudiac.github.io/OfficialFaudyNEWS/">Faudy News.fau</a></li>
-                  <li><a href="https://faudiac.github.io/Faudiax/">Faudiax</a></li>
-                  <li><a href="https://www.youtube.com/">Fauditube</a></li>
-
-                </ul>
-            </div>
-          </form>
-
+        <p class="Newsarticle">
+            Welcome to Fauplay/Fodify. Where you can listen to many tracks 
+            and with collaboration with the founders of fauplay where you can 
+            upload your own tracks on FauPlay.
+        </p>
     </div>
+        
 
     <div class="topbody">
 
@@ -86,6 +68,7 @@
                 <a href="index.html">Home</a>
                 <a href="search.html">Search</a>
                 <a href="About US.html">About</a>
+                <a href="News.html">News</a>
             </div>
 
           <div class="line3"></div>
@@ -99,26 +82,7 @@
 
     <script src="script.js"></script>
 
-    <script>
-      function myFunction() {
-        // Declare variables
-        var input, filter, ul, li, a, i;
-        input = document.getElementById("mySearch");
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("myMenu");
-        li = ul.getElementsByTagName("li");
-      
-        // Loop through all list items, and hide those who don't match the search query
-        for (i = 0; i < li.length; i++) {
-          a = li[i].getElementsByTagName("a")[0];
-          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-          } else {
-            li[i].style.display = "none";
-          }
-        }
-      }
-    </script>
+
 
 </body>
 

@@ -25,7 +25,7 @@ window.onclick = function(event) {
 }
 
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "50%";
 }
 
 function closeNav() {

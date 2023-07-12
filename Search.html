@@ -20,8 +20,9 @@
 
         <form autocomplete="off">
           <div class="search-container">
+            <img src="Faudiax.png" alt="logo" class="Slogo">
             <div class="autocomplete" style="width:95%;">
-              <input type="search" id="mySearch" onchange="searchHistory() ,openPage()" placeholder="let your curiosity guide you.." title="Type your search here">
+              <input type="search" id="mySearch" onchange="openPage()" placeholder="let your curiosity guide you.." title="Type your search here">
             </div>
             <div class="lineverticle"></div>
             <a class="Search-butn" href="#">
@@ -30,22 +31,6 @@
           </div>
         </form>
 
-        <div id="historyLine">
-          <h3>History</h3>
-        </div>  
-
-        <script>
-          function searchHistory(){
-            var recentSearch = []
-            recentSearch.push($('#mySearch').val());
-
-            $.each(recentSearch, function(index, value){
-                const p = document.createElement("p");
-                p.innerHTML = value;
-                document.getElementById("historyLine").appendChild(p);
-            })
-          }
-        </script>
     </div>
 
     <div class="note2">
@@ -55,7 +40,8 @@
       </p>
       <p class="note">
         when you search something an autocomplete will show the word which is searchable but to make the
-        search you have to write down the entire word or sentence and press the autocomplete which may or may not
+        search you have to write down the entire word or sentence and press the autocomplete or search button
+         which may or may not
         sometimes work 
       </p>
     </div>

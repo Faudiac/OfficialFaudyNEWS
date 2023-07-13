@@ -1,18 +1,45 @@
 function openPage() {
-    var x = document.getElementById("mySearch").value;
+  var x = document.getElementById("mySearch").value;
 
-    if (x === "Home") {
-        window.open("index.html");
-    }
+  if (x === "Home") {
+     window.open("index.html");
+  }
 
-    if (x === "Demo news") {
-        window.open("./Video Pages/DemoNEWS.html");
-    }
+  if (x === "Demo news") {
+    window.open("./Video Pages/DemoNEWS.html");
+  }
 
-    if (x === "Services ads") {
-        window.open("services/ads .html");
-    }
+  if (x === "Services ads") {
+    window.open("services/ads .html");
+  }
 
+  if (x === "Psg VS Al Nassr") {
+    window.open("pages/news 1.html");
+  }
+
+  if (x === "Bunnies on sale") {
+    window.open("pages/news12.html");
+  }
+
+  if (x === "Faudiax on spotify") {
+    window.open("pages/news13.html");
+  }
+
+  if (x === "Blast Off to jupiters icy moons") {
+    window.open("pages/Science New1.html");
+  }
+
+  if (x === "Faudiax") {
+    window.open("https://faudiac.github.io/Faudiax/");
+  }
+
+  if (x === "Faudynews") {
+    window.open("https://faudiac.github.io/OfficialFaudyNEWS/");
+  }
+
+  else {
+    alert("Sorry Your Search is not Availible try searching something else!." )
+  }
 
 }
 
@@ -114,6 +141,10 @@ function openPage() {
   }
   
   /*An array containing all the country names in the world:*/
-  var countries = [ "Home", "Demo news", "Services ads"  ]
+  var countries = [ "Home", "Demo news", "Services ads", 
+
+  "Psg VS Al Nassr","Bunnies on sale","Faudiax on spotify","Blast Off to jupiters icy moons",
+  
+  ]
   /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
   autocomplete(document.getElementById("mySearch"), countries);

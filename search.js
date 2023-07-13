@@ -141,7 +141,9 @@ function openPage() {
   }
   
   /*An array containing all the country names in the world:*/
-  var countries = [ "Home", "Demo news", "Services ads", 
+  var countries = [ "Home", "Faudiax", "Faudynews",
+  
+  "Demo news", "Services ads", 
 
   "Psg VS Al Nassr","Bunnies on sale","Faudiax on spotify","Blast Off to jupiters icy moons",
   

@@ -28,13 +28,21 @@ function openPage() {
   if (x === "Blast Off to jupiters icy moons") {
     window.open("pages/Science New1.html");
   }
-
+  
   if (x === "Faudiax") {
     window.open("https://faudiac.github.io/Faudiax/");
   }
 
   if (x === "Faudynews") {
     window.open("https://faudiac.github.io/OfficialFaudyNEWS/");
+  }
+
+  if (x === "Faudiax ad") {
+    window.open("https://faudiac.github.io/OfficialFaudyNEWS/FauPlay/videoplayer/Vid1.html");
+  }
+
+  if (x === "Never gonna give you up") {
+    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
   }
 
   else {
@@ -141,12 +149,15 @@ function openPage() {
   }
   
   /*An array containing all the country names in the world:*/
-  var countries = [ "Home", "Faudiax", "Faudynews",
+  var countries = [ "Home", "Faudiax", "Faudynews","Faudiax Spotify",
   
   "Demo news", "Services ads", 
 
+  "Fauplay","Fodify","Faudiax Podcast","Faudiax ad",
+
   "Psg VS Al Nassr","Bunnies on sale","Faudiax on spotify","Blast Off to jupiters icy moons",
   
+  "Never gonna give you up"
   ]
   /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
   autocomplete(document.getElementById("mySearch"), countries);

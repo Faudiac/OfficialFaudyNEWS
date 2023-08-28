@@ -1,0 +1,980 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
+body {
+  background: black;
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  width: 90%;
+  height: auto;
+  margin: 5.5em auto;
+}
+
+.body2 {
+  width: 90%;
+  height: auto;
+  margin: 1em auto;
+}
+
+.top-bar {
+    width: 100%;
+    height: 5em;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    background: rgba(255, 88, 4, 0);
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.mainlogo {
+    font-family: 'kenia', cursive;
+    font-size: 40px;
+    color: orangered;
+    margin-left: 1.7em;
+}
+
+.LogoTop {
+  width: 250px;
+  position: absolute;
+}
+
+.bottombody {
+  width: 90%;
+  border-radius: 50px;
+  bottom: 10px;
+  margin: auto;
+  align-self: center;
+  position: fixed;
+  left: 5%;
+  background: orangered;
+}
+
+.Bottombar-Search {
+  width: 25%;
+  height: 4em;
+  bottom: 0px;
+  background: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  float: left;
+}
+
+.Bottombar-Search_active {
+  width: 25%;
+  height: 4em;
+  bottom: 0px;
+  border-radius: 50px;
+  background: rgba(255, 85, 0, 0.886);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  float: left;
+}
+
+.Bottombar-Search:hover {
+  background: rgba(255, 255, 255, 0.095);
+}
+
+.Search-finder {
+  width: 1em;
+  height: 1em;
+  color: white;
+  right: 60px;
+  position: fixed;
+  border-radius: 50px;
+}
+
+.Search-finder:hover {
+  background: rgba(213, 77, 27, 0.484);
+}
+
+.Profile-open {
+  color: white;
+  width: 1em;
+  height: 1em;
+  right: 25px;
+  position: fixed;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.Profile-open:hover {
+  background: rgba(213, 77, 27, 0.484);
+}
+
+.butns-nav {
+  width: 90%;
+  margin: 2em auto;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.091);
+}
+
+.Search-Nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.2s;
+}
+
+.Search-Nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.Search-Nav a:hover {
+  color: #f1f1f1;
+}
+
+.Search-Nav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-size: 30px;
+  margin-left: px;
+  color: white;
+}
+
+@media screen and (max-height: 450px) {
+  .Search-Nav {
+    padding-top: 15px;
+  }
+  .Search-Nav a {
+    font-size: 18px;
+  }
+}
+
+/********* SEARCH **********/
+
+.MySearch-butn {
+  height: 1.4em;
+  margin-right: 8px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MySearch-butn:hover{
+  color: orangered;
+}
+
+.search-container {
+  width: 90%;
+  margin: 3em auto;
+  height: 3em;
+  background: rgba(245, 222, 179, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(147, 147, 147);
+  border-radius: 50px;
+}
+
+.search-container3 {
+  width: 90%;
+  margin: 6em auto;
+  height: 3em;
+  background: rgba(245, 222, 179, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(147, 147, 147);
+  border-radius: 50px;
+}
+
+#mySearch {
+  width: 99%;
+  height: 3em;
+  font-size: 14px;
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: 0px solid;
+  outline: none;
+}
+
+#mySearch::-webkit-search-cancel-button{
+  position:relative;
+  right:20px;  
+
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius:10px;
+  background: red;
+}
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #000000;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+  color: rgba(255, 255, 255, 0.551);
+}
+
+.autocomplete-items div {
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #4b4b4b00; 
+  border-bottom: 1px solid #d4d4d400; 
+}
+
+.autocomplete-items div:hover {
+  background-color: #535353; 
+}
+
+.autocomplete-active {
+  background-color: rgb(255, 143, 30) !important; 
+  color: #ffffff; 
+}
+
+.Slogo {
+  width: 50px;
+  box-shadow: none;
+}
+
+.ErrorSearch {
+  text-align: center;
+  font-size: 70px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: orangered;
+}
+
+.ErrorSearch_Reason {
+  text-align: center;
+  font-size:20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(255, 0, 0);
+}
+
+.ErrorSeach_bear {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+/********* SEARCH **********/
+
+.PARA {
+  color: white;
+  font-size: 17px;
+  font-family: sans-serif;
+  line-height: 23px;
+  margin-top: 7em;
+
+}
+.PARA2 {
+  margin-top: 10px;
+  color: white;
+  font-size: 17px;
+  font-family: sans-serif;
+  line-height: 23px;
+}
+
+/********* StarMovie Section **********/
+
+
+
+.holder {
+  width: 100%;
+  height: 20%;
+  background: rgba(0, 0, 0, 0.727);
+}
+
+.checked {
+  color: rgb(242, 255, 0);
+}
+
+.Top-Hits {
+  color: white;
+  font-family: 'kenia', cursive;
+  font-size: 30px;
+  margin: 15px;
+}
+
+.line-Tops {
+  width: 25px;
+  height: 1.5px;
+  margin-left: 20px;
+  background: white;
+}
+
+.line-rongu {
+  width: 100%;
+  height: 1.5px;
+  background: rgb(255, 94, 0);
+}
+
+.Movies-container{
+  width: 100%;
+  height: 20em;
+  position: relative;
+  margin-top: 10px;
+  background: rgba(135, 135, 135, 0.133);
+}
+
+.Movie-Poster {
+  width: 190px;
+  border-radius: 10px;
+}
+
+/**** Support us *****/ 
+
+.WebHome {
+  width: 100px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  position: relative;
+  color: red;
+}
+
+h4 {
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: rgb(81, 166, 81);
+}
+
+.Text-link2 {
+  margin: 15px;
+  font-size: 12px;
+  border: 0px;
+  font-size: 18px;
+  background: transparent;
+  color: white;
+}
+
+.collapsible {
+  background-color: #ffffff00;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ff712f38;
+}
+
+.content2 {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #f1f1f11a;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.followbutn {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: none;
+}
+
+/************ Explore more **********/
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 10px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgba(255, 255, 255, 0.128);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.102);
+  cursor: pointer;
+  color: white;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  background-color: #ff730085;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/************ Search results **********/
+
+.trackcontainer {
+  width: 90%;
+  height: 6.5em;
+  background: rgba(255, 255, 255, 0);
+  position: relative;
+  border-radius: 10px;
+  margin: 1em auto;
+}
+
+.trackcontainer:hover {
+  background: rgba(255, 255, 255, 0.099);
+}
+
+.Thumbnail-circle {
+  width: 5em;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  background: rgba(255, 255, 255, 0.13);
+  margin: 5px;
+  margin-top: 10px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.Trackname {
+  color: white;
+  padding-top: 8px;
+  margin-left: 4em;
+  font-size: 27px;
+}
+
+.trackdiscription {
+  color: rgba(255, 255, 255, 0.577);
+  margin-left: 7em;
+  margin-bottom: 5px;
+}
+
+.note-white {
+  margin-left: 30px;
+  color: white;
+}
+
+/********* PROFILE *********/
+
+.Profile_Tittle {
+  color: rgb(68, 138, 68);
+  margin: 30px;
+}
+
+.Username {
+    color: white;
+    margin: 30px;
+}
+
+.Password {
+  color: white;
+  margin: 30px;
+}
+
+.note {
+  color: rgb(255, 5, 5);
+  margin: 30px;
+}
+
+/********* PROFILE *********/
+
+/********* MOVIE VIEWER *********/ 
+
+.GoBack {
+  width: 2em;
+  height: 2em;
+  top: 0px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.064);
+  color: white;
+  border-radius: 50px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: fixed;
+}
+
+.GoBack:hover{
+  background-color: #fa590f83;
+}
+
+.bg {
+  width: 100%;
+  height: auto; 
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  box-shadow: 10px 50px 200px 250px rgba(22, 216, 15, 0.2);
+}
+
+.MovieViewer_body {
+  width: 100%;
+  height: 45em;
+  margin-top: 100em;
+  margin: 31em auto;
+  position: relative;
+  background: #000000f3;
+}
+
+.movie_title {
+  font-family: 'kenia', cursive;
+  font-size: 50px;
+  color: orangered;
+  margin-left: 1.5em;
+  margin-top: 10em;
+}
+
+/*******  ********/
+
+
+
+/******* Video Player ********/
+
+.movie-card
+{
+    background-color: #0c0c0c;
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px 0px #a63107;
+    margin: 7em auto;
+    min-height: em;
+    cursor: pointer;
+}
+.movie-img
+{
+    max-height: 50em;
+    overflow: hidden;
+}
+.movie-img img
+{
+    width: 100%;
+}
+.card-body
+{
+    padding: 20px;
+}
+.movie-title
+{
+    font-size: 20px;
+}
+.movie-intro
+{
+    font-size: 16px;
+    color: white;
+}
+
+.line {
+  width: 98%;
+  height: 1px;
+  margin: 1em auto;
+  background: rgb(61, 61, 61);
+}
+
+.Watch_trailer {
+  width: 8em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 2px solid orangered;
+  color: orangered;
+  outline: none;
+  transition-duration: 500ms;
+}
+
+.Watch_trailer:hover {
+  background: orangered;
+  color: white;
+  width: 8.5em;
+  height: 3.5em;
+}
+
+/********************************FAUDY BEWS ********************************************/
+
+.news-link {
+  width: 100%;
+  height: 8em;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0);
+}
+
+.news-link:hover {
+  background: rgba(255, 255, 255, 0.033);
+}
+
+.news-thumb {
+  width: 150px;
+  margin-top: 15px;
+  margin-left: 20px;
+  box-shadow: none;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.Text-link {
+  position: relative;
+  margin-top: 40px;
+  margin-left: 14em;
+  font-size: 13px;
+  border: 0px;
+  background: transparent;
+  color: rgb(255, 255, 255);
+}
+
+.label {
+  margin-top: 10px;
+  margin-left: 12em;
+  background: orangered;
+  width: 4em;
+  height: 1.5em;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.vidname2 {
+  font-size: 20px;
+  color: white;
+  padding-top: 15px;
+  margin-left: 5.5em;
+}
+
+.GuestButn {
+  border: 1px solid rgb(255, 98, 0);
+  background-color: #ffffff00;
+  color: rgb(255, 98, 0);
+  padding: 16px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 90%;
+  border-radius: 50px;
+  opacity: 0.9;
+}
+
+.GuestButn:hover {
+  background-color: #ff6200d7;
+  color: white;
+  padding: 20px;
+}
+
+.SocialPAGES1 {
+  width: 100%;
+  height: 10em;
+  display: flex;
+  background: rgb(114, 142, 207);
+  border-radius: 20px;
+
+}
+
+.SocialPAGES2 {
+  width: 100%;
+  height: 10em;
+  display: flex;
+  background: rgb(106, 216, 108);
+  border-radius: 20px;
+
+}
+
+.SocialPAGES3 {
+  width: 100%;
+  height: 10em;
+  display: flex;
+  background: rgb(211, 44, 15);
+  border-radius: 20px;
+
+}
+
+.ABOUTUSPIC {
+  margin-left: 3px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.SocialBUTN1 {
+  font-size: 30px;
+  color: blue;
+  border: 0px;
+  width: 6em;
+  height: 100%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: rgba(255, 255, 255, 0);
+}
+
+.ABOUTUSPIC2 {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.SocialBUTN2 {
+  margin-top: 10px;
+  font-size: 30px;
+  color: rgb(69, 155, 56);
+  border: 0px;
+  height: 100%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: rgba(255, 255, 255, 0);
+}
+
+.SocialBUTN3 {
+  margin-top: 10px;
+  font-size: 30px;
+  color: rgb(126, 12, 12);
+  border: 0px;
+  height: 100%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: rgba(255, 255, 255, 0);
+}
+
+/********************************* FAUCHAT ***********************************/
+
+.StoryPost_box {
+  width: 90%;
+  height: auto;
+  margin: 5em auto;
+  border-radius: 10px;
+  border: 1px solid rgb(234, 84, 24);
+  background: rgba(234, 84, 24, 0.059);
+  box-shadow: 0px 0px 10px 5px var(rgb(0, 94, 255));
+}
+
+.Story_PfP {
+  width: 4.5em;
+  height: 4.5em;
+  margin: 15px;
+  border-radius: 50px;
+  background: white;
+  border: 2px solid rgb(255, 128, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Storypfp_name {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  margin: 1.5em;
+  margin-left: 4.5em;
+}
+
+.Story_description {
+  color: white;
+  margin: 15px;
+}
+
+.Post_VidPlayer {
+  width: 90%;
+  margin: 5px;
+}
+
+
+.like-area{
+  width:100%;
+  float: left;
+}
+.like-area ul{
+  list-style: none;
+  margin: 0px
+}
+.like-area ul li{
+  display: inline-block;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+.like-area ul li a{
+  width: 1em;
+  height: 1em;
+  background-color: rgba(255, 255, 255, 0.146);
+  border-radius: 50px;
+  border: 1px solid rgb(85, 85, 85);
+  padding: 10px;
+  font-size: 25px;
+  color: #ffffff;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  -webkit-user-select: none; /* Safari */      
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+.like-area ul li a:hover {
+  background-color: rgba(255, 111, 0, 0.146);
+  border: 1px solid rgb(255, 94, 0);
+}
+
+.like-area ul li a:active {
+  background-color: rgba(255, 111, 0, 0.993);
+  border: 1px solid rgb(255, 94, 0);
+}
+
+.like-no{
+  font-size: 20px;
+}
+.like-area i{
+  float: left;
+}
+.like-area .fas{
+  font-size: 0px;
+}
+.like-active .fas{
+ font-size: 25px;
+}
+.like-active .far{
+ font-size: 0px;
+}
+
+.chip{
+  display: inline-flex;
+  flex-direction: row;
+  background-color: #eabbbb49;
+  border: 1px solid rgb(65, 65, 65);
+  cursor: default;
+  height: 36px;
+  outline: none;
+  padding: 0;
+  font-size: 14px;
+  color: #ffffff;
+  font-family:"Open Sans", sans-serif;
+  white-space: nowrap;
+  align-items: center;
+  border-radius: 16px;
+  vertical-align: middle;
+  text-decoration: none;
+  justify-content: center;
+  margin: 10px;
+}
+.chip-head{
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: #ef600c;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  align-items: center;
+  user-select: none;
+  border-radius: 50%;
+  justify-content: center;
+  width: 36px;
+  color: #fff;
+  height: 36px;
+  font-size: 20px;
+  margin-right: -1px;
+}
+.chip-content{
+  cursor: inherit;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  white-space: nowrap;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.chip-svg{
+      color: #999999;
+  cursor: pointer;
+  height: auto;
+  margin: 4px 4px 0 -8px;
+fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 24px;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  user-select: none;
+  flex-shrink: 0;
+}
+.chip-svg:hover{
+  color: #666666;
+}
+
+video {
+  padding: 10px;
+  width: 95%;
+  border-radius: 15px;
+}
+
+a {
+  color: white;
+}

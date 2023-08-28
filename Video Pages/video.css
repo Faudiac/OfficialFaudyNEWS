@@ -491,3 +491,19 @@ body, .container, .video-controls, .video-timer, .options{
     display: none;
   }
 }
+
+.GoBACK {
+  width: 8em;
+  height: 3em;
+  margin-top: 10px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 50px;
+}
+
+.GoBACK:hover {
+  color: black;
+  background: white;
+  padding: px;
+}

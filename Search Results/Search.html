@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faudynews | Search</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="shortcut icon" type="x-icon" href="../Faudiax.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+  <body>
+
+    <div class="body">
+
+        <form autocomplete="off">
+          <div class="search-container">
+            <img src="../Faudiax.png" alt="logo" class="Slogo">
+            <div class="autocomplete" style="width:95%;">
+              <input type="search" id="mySearch" onchange="openPage()" placeholder="let your curiosity guide you.." title="Type your search here">
+            </div>
+            <a class="MySearch-butn" href="#">
+              <ion-icon name="search-outline" size="large"></ion-icon>
+            </a> 
+          </div>
+        </form>
+
+        <div class="top-bar">
+
+            <img src="../Name.png" alt="" class="LogoTop">
+      
+            <ion-icon name="person-outline" size="large" class="Profile-open" onclick="openProfile()"></ion-icon>
+      
+        </div>
+
+        <div class="botto">
+            <div class="bottombody">
+    
+                <a href="../index.html" class="Bottombar-Search">
+                    <ion-icon name="home-outline" size="large"></ion-icon>
+                </a>
+        
+                <a href="#" class="Bottombar-Search_active">
+                  <ion-icon name="search" size="large"></ion-icon>
+                </a>
+
+                <a href="../FauCHAT/FauCHAT.html" class="Bottombar-Search">
+                  <ion-icon name="chatbubbles-outline" size="large"></ion-icon>
+                </a>
+
+                <a href="../About US.html" class="Bottombar-Search">
+                    <ion-icon name="apps-outline" size="large"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="Profile-Nav" class="Search-Nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeProfile()">&times;</a>
+
+        <div class="body"></div>
+
+          <h3 class="Profile_Tittle">Profile</h3>
+
+          <div class="Profile-img"></div>
+
+          <div class="Username"> User Name : Guest 12t329fau.diax0021</div>
+          <div class="Password"> Password : Not Availible</div>
+
+          <div class="note">To make an account download the Faudiax App</div>
+        </div>
+
+        <script>
+          function openProfile() {
+            document.getElementById("Profile-Nav").style.width = "100%";
+          }
+      
+          function closeProfile() {
+            document.getElementById("Profile-Nav").style.width = "0";
+          }
+        </script>
+
+      </div>
+
+    <!------ The Search nav bar -------> 
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="SearchFiles.js"></script>
+
+  </body>
+
+</html>

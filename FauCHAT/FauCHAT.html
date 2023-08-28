@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faudynews | Search</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="shortcut icon" type="x-icon" href="../Faudiax.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+  <body>
+
+    <div class="body">
+
+        <form autocomplete="off">
+          <div class="search-container">
+            <img src="../Faudiax.png" alt="logo" class="Slogo">
+            <div class="autocomplete" style="width:95%;">
+              <input type="search" id="mySearch" onchange="openPage()" placeholder="This search doesn't work..!" title="Type your search here">
+            </div>
+            <a class="MySearch-butn" href="#">
+              <ion-icon name="search-outline" size="large"></ion-icon>
+            </a> 
+          </div>
+        </form>
+
+        <div class="StoryPost_box">
+          <div class="Storypfp_name">Official Faudiax</div>
+          <div class="Story_PfP">
+              <img src="../Faudiax.png" class="pfp_story" width="100%">
+          </div>
+          <div class="Story_Content">
+              <video src="../Video Pages/Videos/FaudyNews Intro.mov" controls class="Post_VidPlayer"></video>
+          </div>
+          <div class="Story_description">
+              This is the First Post to FauChat, This is a advertisement of Faudiax Company logo.  
+          </div>
+
+          <div class="chip">
+          <div class="chip-head">B</div>
+          <div class="chip-content">Business</div>
+          </div>
+
+          <div class="chip">
+          <div class="chip-head">F</div>
+          <div class="chip-content">Faudiax</div>
+          </div>
+        </div>
+
+        <div class="StoryPost_box">
+          <div class="Storypfp_name">Faudynews</div>
+          <div class="Story_PfP">
+              <img src="../Faudiax.png" class="pfp_story" width="100%">
+          </div>
+          <div class="Story_Content">
+              <video src="../Video Pages/Videos/Faudy news 11.mp4" controls class="Post_VidPlayer"></video>
+          </div>
+          <div class="Story_description">
+            Demo NEWS!!
+          </div>
+
+          <div class="chip">
+          <div class="chip-head">B</div>
+          <div class="chip-content">Business</div>
+          </div>
+
+          <div class="chip">
+          <div class="chip-head">F</div>
+          <div class="chip-content">Faudiax</div>
+          </div>
+        </div>
+
+        <div class="top-bar">
+
+            <img src="../Name.png" alt="" class="LogoTop">
+      
+            <ion-icon name="person-outline" size="large" class="Profile-open" onclick="openProfile()"></ion-icon>
+      
+        </div>
+
+        <div class="botto">
+            <div class="bottombody">
+    
+                <a href="../index.html" class="Bottombar-Search">
+                    <ion-icon name="home-outline" size="large"></ion-icon>
+                </a>
+        
+                <a href="../Search Results/Search.html" class="Bottombar-Search">
+                  <ion-icon name="search-outline" size="large"></ion-icon>
+                </a>
+        
+                <a href="#" class="Bottombar-Search_active">
+                  <ion-icon name="chatbubbles" size="large"></ion-icon>
+                </a>
+        
+                <a href="../About US.html" class="Bottombar-Search">
+                    <ion-icon name="apps-outline" size="large"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="Profile-Nav" class="Search-Nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeProfile()">&times;</a>
+
+        <div class="body"></div>
+
+          <h3 class="Profile_Tittle">Profile</h3>
+
+          <div class="Profile-img"></div>
+
+          <div class="Username"> User Name : Guest 12t329fau.diax0021</div>
+          <div class="Password"> Password : Not Availible</div>
+
+          <div class="note">To make an account download the Faudiax App</div>
+        </div>
+
+        <script>
+          function openProfile() {
+            document.getElementById("Profile-Nav").style.width = "100%";
+          }
+      
+          function closeProfile() {
+            document.getElementById("Profile-Nav").style.width = "0";
+          }
+        </script>
+
+      </div>
+
+
+    <!------ The Search nav bar -------> 
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="SearchFiles.js"></script>
+
+  </body>
+
+</html>

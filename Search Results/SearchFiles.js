@@ -5,20 +5,28 @@ function openPage() {
       window.open("../index.html");
     }
 
+    if (x === "About") {
+      window.open("../About US.html");
+    }
+
     if (x === "Monsters curiosity") {
        window.open("../Search Results/404.html");
     }
 
     if (x === "Teddies warfare") {
       window.open("R=TeddiesWarfare.html");
-   }
+    }
     
     if (x === "Faudynews") {
       window.open("../Search Results/R=FaudyNEWS.html");
     }
+
+    if (x === "Our first income", "Money") {
+      window.open("");
+    }
   
     else {
-      window.open("../Search Results/404.html");
+      window.open("BRUH.html");
     }
   }
   
@@ -122,10 +130,12 @@ function openPage() {
     /*An array containing all the country names in the world:*/
     var countries = [ 
       
-    "Home", 
+    "Home", "About",
     
     "Monsters curiosity", "Faudynews", "Teddies warfare",
     
-    "Faudiax", "About!", "Spotify"]
+    "Faudiax", "About!", "Spotify", 
+  
+    "Bunnies on sale", "Psg vs Al nassr", "Faudiax on spotify", "Our first income", "Money"]
     /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
     autocomplete(document.getElementById("mySearch"), countries);

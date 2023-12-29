@@ -12,19 +12,70 @@
 
   <body>
 
+    <div class="countdown">
+      <div id="demo" class="NUMBERS"></div>
+
+      <div class="timefor">2024 COUNT DOWN</div>
+      <div class="timefor">Celebrating Faudynews 4th year Aniversary</div>
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 30, 2023 23:59:59").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+        
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+    </div>
+
     <div class="body">
+
+      <form autocomplete="off">
+        <div class="search-container3">
+          <div class="autocomplete" style="width:95%;">
+            <input type="search" id="mySearch" onchange="openPage()" placeholder="let your curiosity guide you.." title="Type your search here">
+          </div>
+          <a class="MySearch-butn" href="#">
+            <ion-icon name="search-outline" size="large"></ion-icon>
+          </a> 
+        </div>
+      </form>
+
         <h2> THE GREATEST HEADLINES OF ALL TIME </h2>
     </div>
+
+
 
     <!---STar MOVIE --->
     <div class="movie-card">
       <div class="movie-img"> 
-       <img src="Images/Teddies Warfair 2.png">     
+       <img src="Images/Palestine Flag.webp">     
       </div>
       <div class="card-body">
-       <h2 class="movie-title">Teddies Warfair RELEASE DATE!??!?</h2>
+       <h2 class="movie-title">Palestine war </h2>
         <p class="movie-intro">
-          The release of the First Faudiax Production movie ...
+          A news folder about the Israel and Hamas war, with articles by the partner ship with Digital intifada
         </p>   
        
        <style>
@@ -36,12 +87,12 @@
 
        <div class="line"></div>
 
-       <a href="pages/news15.html">
-          <div class="Watch_trailer"> <span>▶︎</span> See more </div>
+       <a href="">
+          <div class="Watch_trailer"> <span>▶︎</span> Comming soon! </div>
        </a>
 
       </div>    
-     </div>
+    </div>
 
     <div class="body">
     
@@ -52,6 +103,14 @@
     <div class="body2">
       <h2 class="Top-Hits">Top Hits</h2>
       <div class="line-Tops"></div>
+
+      <a href="pages/news15.html">
+        <div class="news-link" id="searsh"> 
+          <img src="Images/Teddies Warfair 2.png" alt="Thumb" class="news-thumb">
+          <button class="Text-link"> Teddies warfair release date</button>
+          <div class="label">Business</div>
+        </div>
+      </a>
 
       <a href="pages/news14.html">
         <div class="news-link" id="searsh"> 
@@ -77,9 +136,10 @@
           </div>
       </a>
 
+    </div>
     <!-------Watch News------->
 
-    <div class="movie-card">
+    <div class="movie-card2">
         <div class="movie-img"> 
          <img src="Images/Faudynews.png">     
         </div>
@@ -131,7 +191,6 @@
       </a>
 
     </div>
-  
 
     <div class="top-bar">
 

@@ -5,24 +5,16 @@ function openPage() {
       window.open("../index.html");
     }
 
-    if (x === "About") {
-      window.open("../About US.html");
-    }
-
-    if (x === "Monsters curiosity") {
-       window.open("../Search Results/404.html");
-    }
-
     if (x === "Teddies warfare") {
       window.open("R=TeddiesWarfare.html");
     }
     
     if (x === "Faudynews") {
-      window.open("../Search Results/R=FaudyNEWS.html");
+      window.open("R=FaudyNEWS.html");
     }
 
-    if (x === "Our first income", "Money") {
-      window.open("");
+    if (x === "Bunnies on sale", "Bunnies", "Sale") {
+      window.open("Bunnies on Sale.html");
     }
   
     else {
@@ -136,6 +128,6 @@ function openPage() {
     
     "Faudiax", "About!", "Spotify", 
   
-    "Bunnies on sale", "Psg vs Al nassr", "Faudiax on spotify", "Our first income", "Money"]
+    "Bunnies on sale", "Psg vs Al nassr", "Faudiax on spotify", "Our first income", "Money", "income"]
     /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
     autocomplete(document.getElementById("mySearch"), countries);
